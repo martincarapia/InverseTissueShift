@@ -23,6 +23,7 @@ public class Jellyfier : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("I'm awake!!");
         meshFilter = GetComponent<MeshFilter>();
         mesh = meshFilter.mesh;
         //fallForce = Random.Range(25, 80);
@@ -42,6 +43,7 @@ public class Jellyfier : MonoBehaviour
 	private void Update()
 	{
         UpdateVertices();
+        Debug.Log("updated");
     }
 
 	private void UpdateVertices()
@@ -75,6 +77,7 @@ public class Jellyfier : MonoBehaviour
 
     public void OnCollisionEnter(Collision other)
     {
+        Debug.Log("Collision detected!");
         ContactPoint[] collisonPoints = other.contacts;
         for (int i = 0; i < collisonPoints.Length; i++)
         {
@@ -111,20 +114,6 @@ public class Jellyfier : MonoBehaviour
         //Our velocity now still needs a direction, we can calculate this using the
         //normalized distance vertex point from earlier
         vertexVelocities[_index] += distanceVerticePoint.normalized * velocity;
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 
     }
 }
