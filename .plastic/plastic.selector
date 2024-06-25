@@ -1,4 +1,0 @@
-repository "proofofconceptIVF@INITMaki@cloud"
-  path "/"
-    br "/main"
-    co "/main"
