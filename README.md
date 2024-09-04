@@ -3,7 +3,7 @@
 Cd into a folder and git clone this project.
 
 ```bash
-git clone git@github.com:martincarapia/invitrofertilization.git
+git clone git@github.com:martincarapia/InverseTissueShift.git
 ```
 
 ## Requirements
